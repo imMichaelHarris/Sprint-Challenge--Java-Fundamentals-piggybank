@@ -22,4 +22,12 @@ public class Coin {
     public double getValue(){
         return value;
     }
+    public int getQuanity(){
+        return quanity;
+    }
+
+    @Override
+    public String toString(){
+        return getValue() * getQuanity() + " worth of " + getName();
+    }
 }
