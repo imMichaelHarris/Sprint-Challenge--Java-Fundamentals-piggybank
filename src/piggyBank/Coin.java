@@ -22,6 +22,11 @@ public abstract class Coin {
             quanity--;
         }
     }
+    public void removeCoin(int quanity){
+        if(this.quanity > quanity){
+            this.quanity -= quanity;
+        }
+    }
 
 
 }
