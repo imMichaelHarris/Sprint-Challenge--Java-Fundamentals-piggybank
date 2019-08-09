@@ -29,7 +29,12 @@ public class Main {
         piggyBank.add(new Dollar());
         
         piggyBank.add(new Penny(10));
-        System.out.println(piggyBank);
+        
+        double totalInBank = 0;
+        for (Coin c : piggyBank){
+            totalInBank += c.total();
+        }
+        System.out.println("The piggy bank holds $" + totalInBank);
     }
     public static void main(String[] args){
         createCoins();

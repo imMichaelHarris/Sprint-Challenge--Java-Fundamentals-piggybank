@@ -20,6 +20,6 @@ public class Quarter extends Coin {
     }
     @Override
     public String toString(){
-        return getQuanity() + " Quarters";
+        return getQuanity() + " Pennies";
     }
 }
