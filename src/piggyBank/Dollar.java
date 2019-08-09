@@ -1,12 +1,16 @@
 package piggyBank;
 
 public class Dollar extends Coin {
+    private static int dollars = 0;
     private String name = "Dollar";
     private double value = 1.00;
 
-    public Dollar(){}
+    public Dollar(){
+        dollars++;
+    }
     public Dollar(int quanity){
         super(quanity);
+        dollars += quanity;
     }
 
     @Override 

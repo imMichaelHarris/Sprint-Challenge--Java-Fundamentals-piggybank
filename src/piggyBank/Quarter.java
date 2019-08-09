@@ -1,12 +1,16 @@
 package piggyBank;
 
 public class Quarter extends Coin {
+    private static int quarters = 0;
     private String name = "Quarter";
     private double value = .25;
 
-    public Quarter(){}
+    public Quarter(){
+        quarters++;
+    }
     public Quarter(int quanity){
         super(quanity);
+        quarters += quanity;
     }
 
     @Override 
