@@ -25,7 +25,7 @@ public class Main {
         for (Coin c : piggyBank){
             totalInBank += c.total();
         }
-        System.out.println("The piggy bank holds $" + totalInBank);
+        System.out.println("The piggy bank holds " + fp.format(totalInBank));
     }
     public static void main(String[] args){
         createCoins();
