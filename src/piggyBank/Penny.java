@@ -4,7 +4,9 @@ public class Penny extends Coin{
     private String name = "Penny";
     private double value = .01;
 
-    
+    public Penny(){
+
+    }
     public Penny(int quanity){
         super(quanity);
     }
@@ -17,5 +19,9 @@ public class Penny extends Coin{
     @Override 
     public double getValue(){
         return value;
+    }
+    @Override
+    public String toString(){
+        return getQuanity() + " Pennies";
     }
 }

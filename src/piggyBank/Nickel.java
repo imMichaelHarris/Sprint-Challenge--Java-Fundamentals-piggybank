@@ -4,7 +4,7 @@ public class Nickel extends Coin{
     private String name = "Nickel";
     private double value = .05;
 
-    
+    public Nickel(){}
     public Nickel(int quanity){
         super(quanity);
     }
@@ -17,5 +17,9 @@ public class Nickel extends Coin{
     @Override 
     public double getValue(){
         return value;
+    }
+    @Override
+    public String toString(){
+        return getQuanity() + " Nickels";
     }
 }

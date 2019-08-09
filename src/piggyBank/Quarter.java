@@ -4,7 +4,7 @@ public class Quarter extends Coin {
     private String name = "Quarter";
     private double value = .25;
 
-    
+    public Quarter(){}
     public Quarter(int quanity){
         super(quanity);
     }
@@ -17,5 +17,9 @@ public class Quarter extends Coin {
     @Override 
     public double getValue(){
         return value;
+    }
+    @Override
+    public String toString(){
+        return getQuanity() + " Quarters";
     }
 }
