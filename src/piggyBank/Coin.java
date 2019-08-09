@@ -17,6 +17,11 @@ public abstract class Coin {
     public int getQuanity(){
         return quanity;
     }
+    public void removeCoin(){
+        if(quanity > 1){
+            quanity--;
+        }
+    }
 
 
 }
