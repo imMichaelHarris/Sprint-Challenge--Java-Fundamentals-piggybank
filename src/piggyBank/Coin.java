@@ -3,7 +3,7 @@ package piggyBank;
 public class Coin {
     private String name;
     private double value;
-    private int quanity = 1;
+    private int quanity; 
 
 
     public Coin(String name, double value){
@@ -24,6 +24,9 @@ public class Coin {
     }
     public int getQuanity(){
         return quanity;
+    }
+    public double total(){
+        return getValue() * getQuanity();
     }
 
     @Override
