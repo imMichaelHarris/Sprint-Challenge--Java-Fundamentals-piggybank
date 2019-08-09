@@ -5,8 +5,17 @@ public class Penny extends Coin{
     private double value = .01;
 
     
-    public Penny(String name, double value, int quanity){
-        super(name, value, quanity);
+    public Penny(int quanity){
+        super(quanity);
     }
 
+    @Override 
+    public double total(){
+        return value * getQuanity();
+    }
+
+    @Override 
+    public double getValue(){
+        return value;
+    }
 }
