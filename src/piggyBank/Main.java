@@ -15,6 +15,20 @@ public class Main {
         System.out.println(quarter);
         System.out.println(dollar);
 
+        ArrayList<Coin> piggyBank = new ArrayList<Coin>();
+
+        piggyBank.add(new Coin("Quarter", .25, 3));
+        piggyBank.add(new Coin("Dime", .10))
+
+        piggyBank.add(new Coin("Dollar", 1.00, 5))
+        
+        piggyBank.add(new Coin("Nickel", .05, 3))
+        
+        piggyBank.add(new Coin("Dime", .10, 7))
+        
+        piggyBank.add(new Coin("Dollar", 1.00))
+        
+        piggyBank.add(new Coin("Penny", .01, 10))
     }
     public static void main(String[] args){
         createCoins();
