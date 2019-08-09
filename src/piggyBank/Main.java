@@ -1,19 +1,10 @@
 package piggyBank;
-
+import java.text.DecimalFormat;
 import java.util.*;
 
 public class Main {
     private static void createCoins() {
-        Penny penny = new Penny(12);
-        // Coin nickel = new Coin("Nickel", .05);
-        // Coin dime = new Coin("Dime", .10);
-        // Coin quarter = new Coin("Quarter", .25, 3);
-        // Coin dollar = new Coin("Dollar", 1.00, 7);
-        // System.out.println(nickel);
-        // System.out.println(dime);
-        // System.out.println(quarter);
-        // System.out.println(dollar);
-
+        DecimalFormat fp = new DecimalFormat("$###,###.00");
         ArrayList<Coin> piggyBank = new ArrayList<Coin>();
 
         piggyBank.add(new Quarter());
