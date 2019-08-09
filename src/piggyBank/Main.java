@@ -3,10 +3,11 @@ package piggyBank;
 import java.util.*;
 
 public class Main {
-    public void createBank() {
-        
+    private static void createCoins() {
+        Coin penny = new Coin("Penny", .01);
+        System.out.println(penny);
     }
     public static void main(String[] args){
-
+        createCoins();
     }
 }
