@@ -9,7 +9,6 @@ public class Dollar extends Coin {
         dollars++;
     }
     public Dollar(int quanity){
-        super(quanity);
         dollars += quanity;
     }
 

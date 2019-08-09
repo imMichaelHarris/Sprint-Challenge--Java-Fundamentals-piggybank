@@ -9,7 +9,6 @@ public class Quarter extends Coin {
         quarters++;
     }
     public Quarter(int quanity){
-        super(quanity);
         quarters += quanity;
     }
 

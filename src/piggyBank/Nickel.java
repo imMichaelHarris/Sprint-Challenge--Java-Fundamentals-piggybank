@@ -9,7 +9,6 @@ public class Nickel extends Coin{
         nickels++;
     }
     public Nickel(int quanity){
-        super(quanity);
         nickels += quanity;
     }
 
