@@ -1,14 +1,20 @@
 package piggyBank;
 
 public class Penny extends Coin{
+    private static int pennies = 0;
     private String name = "Penny";
     private double value = .01;
 
     public Penny(){
-
+        pennies++;
     }
     public Penny(int quanity){
         super(quanity);
+        pennies += quanity;
+    }
+
+    public int penniesInBank(){
+        return pennies;
     }
 
     @Override 

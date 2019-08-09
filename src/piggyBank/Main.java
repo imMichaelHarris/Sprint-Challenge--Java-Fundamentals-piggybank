@@ -6,6 +6,8 @@ public class Main {
     private static void createCoins() {
         DecimalFormat fp = new DecimalFormat("$###,###.00");
         ArrayList<Coin> piggyBank = new ArrayList<Coin>();
+        //Define coins so program will know which ones to subtract
+    
 
         piggyBank.add(new Quarter());
 
@@ -26,6 +28,9 @@ public class Main {
             totalInBank += c.total();
         }
         System.out.println("The piggy bank holds " + fp.format(totalInBank));
+
+        System.out.println(new Penny().penniesInBank());
+
     }
     public static void main(String[] args){
         createCoins();
