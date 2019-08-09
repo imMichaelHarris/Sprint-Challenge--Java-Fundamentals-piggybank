@@ -1,7 +1,7 @@
 package piggyBank;
 
 public abstract class Coin {
-    private static int quanity; 
+    private int quanity; 
 
 
     public Coin(){

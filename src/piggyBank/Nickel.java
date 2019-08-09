@@ -1,12 +1,16 @@
 package piggyBank;
 
 public class Nickel extends Coin{
+    private static int nickels = 0;
     private String name = "Nickel";
     private double value = .05;
 
-    public Nickel(){}
+    public Nickel(){
+        nickels++;
+    }
     public Nickel(int quanity){
         super(quanity);
+        nickels += quanity;
     }
 
     @Override 
