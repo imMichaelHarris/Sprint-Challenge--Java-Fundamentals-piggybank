@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "piggyBank.Main",
+            "projectName": "Sprint-Challenge--Java-Fundamentals-piggybank_ca7913f5"
+        }
+    ]
+}
